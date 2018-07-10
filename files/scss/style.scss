@@ -125,9 +125,9 @@ i {
 
 /* Header */
 #main_header {
-    //background-color: #fff;
+    background-color: #fff;
     //background-color: #4CAF50;
-    background-color: #FF5722;
+    //background-color: #FF5722;
     height: $main_header_height;
     box-shadow: rgba(0,0,0,0.1) 0px 0px 30px 0px;
     //position: fixed;
@@ -148,14 +148,14 @@ i {
             //padding-right: 30px;
 
             a {
-                //color: #000;
+                color: #000;
                 //color: #F44336;
                 //color: #2d8a31;
-                color: #fff;
+                //color: #fff;
                 text-decoration: none;
                 display: flex;
                 align-items: center;
-                text-shadow: 0px 0px 1px #000;
+                //text-shadow: 0px 0px 1px #000;
 
                 i {
                     margin-right: 4px;
@@ -183,8 +183,10 @@ i {
             .button {
                 margin-left: 15px;
                 a {
-                    color: #FF5722;
-                    background-color: #fff;
+                    //color: #FF5722;
+                    color: #fff;
+                    //background-color: #fff;
+                    background-color: #FF5722;
                     padding: 10px 20px;
                     border-radius: 25px;
                     text-decoration: none;

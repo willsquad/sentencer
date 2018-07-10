@@ -364,10 +364,10 @@ i {
         padding-right: 0px;
 
         @include media-breakpoint-down(sm){
-            height: auto;
+            //height: auto;
         }
 
-        textarea {
+        #textarea_input {
             width: 100%;
             min-width: 100%;
             max-width: 100%;
@@ -378,10 +378,69 @@ i {
             border: none;
             font-size: 20px;
             padding: 15px 15px 0px 0px;
+            overflow: auto;
             
 
             @include media-breakpoint-down(sm){
                 //height: auto;
+            }
+
+            
+        }
+
+        [contenteditable=true]:empty:before{
+            content: attr(placeholder);
+            display: block; /* For Firefox */
+            color: #999;
+        }
+
+
+        /* INLINE SUGGESTIONS  */
+        .inline_suggestions {
+            position: absolute;
+            /* top: 25%;
+            left: 25%; */
+            display: none;
+            z-index: 10000;
+            background-color: #333;
+            //min-height: 150px;
+            box-shadow: 0 0.625rem 3.5rem 0 rgba(198,203,222,0.45);
+            padding: 20px;
+            max-width: 700px;
+            max-height: 120px;
+            overflow: auto;
+
+            &.active {
+                display: block;
+            }
+
+            .word_container_expanded {
+                display: flex;
+                .word {
+                    background-color: #ff3153;
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                    color: #fff;
+                    font-size: 13px;
+                    font-weight: 700;
+                }
+            }
+
+            .synonym_container {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 15px;
+                
+                .synonym {
+                    background-color: #0CCAC2;
+                    padding: 5px 10px;
+                    border-radius: 4px;
+                    color: #fff;
+                    font-size: 13px;
+                    font-weight: 600;
+                    margin: 0px 5px 5px 0px;
+                    cursor: pointer;
+                }
             }
         }
 

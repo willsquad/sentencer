@@ -42,30 +42,12 @@
             <!-- Content -->
             <div id="content" class="max_width col-12">
                 <div class="row">
-                    <div id="text_input" class="col-12 col-md-7 push-md-5 col-lg-8 push-lg-4 col-xl-9 push-xl-3">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter the text here..."></textarea>
+                    <div id="text_input" class="col-12">
+                        <div id="textarea_input" class="textarea" id="" placeholder="Enter the text here..." contenteditable="true"></div>
 
-                        <div class="copy_to_clipboard">
-                            <button class="text_input_button copy_button">Copy</button>
-                            <button class="text_input_button cancel_button">Clear</button>
-                        </div>
-                    </div>
-                    <div id="suggestions" class="col-12 col-md-5 pull-md-7 col-lg-4 pull-lg-8 col-xl-3 pull-xl-9">
-                        <h3 class="suggestions_heading">Suggestions</h3>
-                        <div class="suggestions_div">
-                            <div class="li_word_container">
-                                <span class="li_disc li_disc_red"></span> 
-                                <span class="word">healthy</span>
-                            </div>
-                        </div>
-                        <div class="suggestions_div suggestions_div_expanded">
-                            <div class="li_word_container hidden-xs-up">
-                                <span class="li_disc li_disc_red"></span> 
-                                <span class="word">healthy</span>
-                            </div>
-
+                        <div class="inline_suggestions">
                             <div class="word_container_expanded">
-                                <span class="word">healthy</span>
+                                <span class="word" id="selected_word">healthy</span>
                             </div>
 
                             <div class="synonym_container">
@@ -80,7 +62,11 @@
                                 <span class="synonym">vigorous</span>
                             </div>
                         </div>
-                        <div class="suggestions_div"></div>
+
+                        <div class="copy_to_clipboard">
+                            <button class="text_input_button copy_button">Copy</button>
+                            <button class="text_input_button cancel_button">Clear</button>
+                        </div>
                     </div>
                 </div>
             </div>

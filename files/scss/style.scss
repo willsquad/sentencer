@@ -284,15 +284,21 @@ i {
             //color: #2d8a31;
         }
 
-        .suggestions_div_expanded {
-            height: 150px;
+        .suggestions_div {
             background-color: #fff;
+            min-height: 75px;
             margin-bottom: 15px;
-            box-shadow: 0 0.625rem 3.5rem 0 rgba(198,203,222,.45);
 
             &:last-child {
                 margin-bottom: 0px;
             }
+        }
+
+        .suggestions_div_expanded {
+            height: 150px;
+            box-shadow: 0 0.625rem 3.5rem 0 rgba(198,203,222,.45);
+
+            
         }
     }
 

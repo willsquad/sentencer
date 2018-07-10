@@ -193,7 +193,8 @@ i {
                     transition: all 0.3s ease;
 
                     &:hover {
-                        color: darken(#FF5722, 10%);
+                        //color: darken(#FF5722, 10%);
+                        background-color: darken(#FF5722, 10%);
                     }
                 }
             }
